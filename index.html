@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>I'm a Feminist</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<style>
+		body{background:black;color: white;}
+		
+
+
+/*텍스트*/
+		#womantextbox{position: relative; margin-bottom: 100px; height: 1400px; margin-right: 20px; padding-left: 200px;}
+		.womant1{color: white; font-size: 55px; font-weight: bold; letter-spacing: 0px; position: absolute; }
+			.smallt{font-size: 35px; color: #ccc;}
+
+		.womantyping{color: black; font-size: 55px; font-weight: bold; letter-spacing: 0px;position: absolute; background: black; z-index: 3; background: none;}
+/*스크롤*/
+
+		#monitor{width: 100px; height: 40px; background: red; position: fixed;right: 0px; color: white; text-align: center;line-height: 40px;}
+
+/*여신상*/
+		#statuebox{position: relative; width: 900px; left: calc(50% - 450px); height: 550px; margin-bottom: 400px; }
+		#statueimg{width: 1400px; left: calc(50% - 700px); position: absolute; cursor: pointer;}
+
+
+/*슬라이더*/
+		#slidebox{width: 900px; height: 490px;position: relative; left:calc(50% - 450px); margin-bottom: 100px;}
+
+			.slidecontainer{ position: absolute; width: 800px; left:calc(50% - 400px); bottom: 0;}
+				.slider{-webkit-appearance:none; width: 100%; height: 5px; background:#d3d3d3; outline: none;}
+		
+				.slider::-webkit-slider-thumb {
+					-webkit-appearance:none; 
+					appearance:none; 
+					width: 25px; 
+					height: 25px; 
+					background: black; 
+					cursor: pointer; 
+					border-radius: 50%;
+					border-style: solid;
+					border-color: white;
+				}
+
+				.slider::-moz-range-thumb {
+					width: 25px; 
+					height: 25px; 
+					background: white; 
+					cursor: pointer; 
+				}
+
+		#imimgcontainer{width: 780px; height: 400px; padding: 0; left: calc(50% - 390px);  position: absolute;}
+
+			.imimg{position:absolute;width: 760px; padding-top: 150px; left: 20px;}
+
+		#linecontainer{position: absolute; width: 800px; height: 400px; padding: 0; left:calc(50% - 400px);}
+
+
+
+/*문장 만들기 droptarget*/
+		#dragbox{position: relative; width: 900px; height: 500px; left: calc(50% - 450px);margin-bottom: 400px; margin-top: 300px;}
+		.droptarget { float:left; height: 35px; margin: 10px; width: 90px; border-bottom : 1px solid white; color: white; position: absolute;}
+		.shuffle1
+		.shuffle2
+
+		#dragtextbox{position: relative;width: 800px; height: 200px; left: calc(50% - 400px); top: 100px;}
+		.dragtext1{position: absolute; width: 800px; top: 100px; left:calc(50% - 400px);}
+		.dragtext2{position: absolute; width: 800px; top: 160px; left:calc(50% - 400px);}
+
+		.dragempty{position: relative; width: 800px; height: 170px; left: calc(50% - 400px); top: 250px;}
+
+		footer {color: grey; height: 130px; position: absolute; width: 1200px; left: calc(50% - 600px); margin-top: 200px;}
+		#footerleft{width: 700px; right: 120px; position: absolute;}
+		#footerright{width: 300px; left: 120px; position: absolute;}
+
+		
+	</style>
+</head>
+<body>
+	<header>
+		
+	</header>
+
+	<div id="monitor"></div>
+
+	<section id="womantextbox">
+		
+		<button onclick="typeWriter();">click me</button>
+		
+		<div id="demo2" class="womantyping"></div>
+		
+		<div class="womant1">
+			여기자들이 모두 그쪽처럼 생겼다면 이 여성 권리 운동을 더 심각하게 생각해 보고 싶은 마음도 드는군요
+			<span class="smallt">_&lsquo;Cloud Atlas&rsquo;, 2012.</span><br>
+			그 여자의 몸은 더러웠다. 다리 사이에서 지독한 젓국 냄새가 퍼져나왔다
+			<span class="smallt">_김훈&lsquo;칼의노래&rsquo;, 2001.</span><br>
+			처음 업어보는 처녀의 무게만하겠네 처음 배에 올려보는 여자의 희고 미끄러운 허벅지 무게만하겠네
+			<span class="smallt">_장석남&lsquo;꽃이 무거운 꽃나무여&rsquo;, 2012.</span><br>
+			저 년이 아무리 예쁘게 단장을 하고 치맛자락을 살랑거리며 화냥기를 드러내 보여도 절대로 거들떠 보지 말아라
+			<span class="smallt">_이외수&lsquo;단풍&rsquo;,2018.</span><br>
+			여자는 정말로 꽃과 같은 존재여서 한창 피어날 때 잠시 눈부신 자태를 유지할 수 있을 뿐 그로부터 몇 년만 지나면 바람만 건듯 불어도 낙화유수 같은 신세가 되어 홀로 비애로움에 가슴이 저려오기 마련인 모양이었다.
+			<span class="smallt">_이외수&lsquo;완전변태&rsquo;,2014.</span><br>
+			마누라가 준 용돈으로 용둔 준 여자가 다른 남자랑 공항버스 타고 사라지는 뒷모습 보고 와서 그새 바뀐 전화번호 찾아 헤매고 있는 나의 순정해 대해
+			<span class="smallt">_류근&lsquo;사랑은 아직도 끝나지 않았네&rsquo;,2014.</span><br>
+			나는 어떻게든 마흔 넘기기 전에 이 숫처녀를 죽여버릴 순 없을까 싶어 끙끙 앓는 것이다
+			<span class="smallt">_류근&lsquo;여자와 개와 비와 나&rsquo;,2014.</span><br>
+			그러나 우산대로 여편네를 때려눕혔을 때 우리들의 옆에서는 어린놈이 울었고(중략) 아까운 것이 지우산을 현장에 버리고 온 일이었다.
+			<span class="smallt">_김수영&lsquo;죄와 벌&rsquo;,2014.</span><br>
+
+		</div>
+	</section>
+
+	<!--여신상-->
+
+	<div id="statuebox">
+		<h1> 당신의 점수는 몇점인가요?</h1>
+		<img src="statuestop.jpg" id="statueimg">
+	</div>
+
+	<!--슬라이더-->
+
+	<section id="slidebox">
+		
+		<div id="linecontainer">
+			<canvas id="myCanvas" width="800" height="400" >
+			</canvas>
+		</div>
+
+		<div id="imimgcontainer">
+			<img src="./im/im1.png" class="imimg" id="monitor">
+		</div>
+		<div class="slidecontainer">
+			<input type="range" min="1" max="23" value="1" class="slider" id="myRange">
+			<p> drag it!</p>
+			<p style="color: black">Value <span id="demo"></span></p>
+		</div>
+	</section>
+
+	<!--드래그드롭-->
+	<section id="dragbox">
+
+	<div id="dragtextbox">
+		<h1>텍스트를 드래그해 문장을 만들어 보세요</h1>
+		<div class="dragtext1">
+			<div class="droptarget shuffle1" style="left:0px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget1">중립은</p>
+			</div>
+			<div class="droptarget shuffle1" style="left:110px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget2">가해자에게만</p>
+			</div>
+			<div class="droptarget shuffle1" style="left:220px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget3">이로울 뿐</p>
+			</div>
+			<div class="droptarget shuffle1" style="left:330px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget4">피해자에게는</p>
+			</div>
+			<div class="droptarget shuffle1" style="left:440px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget5">아무런</p>
+			</div>
+			<div class="droptarget shuffle1" style="left:550px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget6">도움이</p>
+			</div>
+			<div class="droptarget shuffle1" style="left:660px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget7">되지</p>
+			</div>
+		</div>
+		<div class="dragtext2">
+			<div class="droptarget shuffle2" style="left:0px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget8">않으며</p>
+			</div>
+			<div class="droptarget shuffle2" style="left:110px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget9">침묵은</p>
+			</div>
+			<div class="droptarget shuffle2" style="left:220px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget10">결국</p>
+			</div>
+			<div class="droptarget shuffle2" style="left:330px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget11">괴롭히는 사람</p>
+			</div>
+			<div class="droptarget shuffle2" style="left:440px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget12">편에</p>
+			</div>
+			<div class="droptarget shuffle2" style="left:550px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget13">서 있는</p>
+			</div>
+			<div class="droptarget shuffle2" style="left:660px;" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<p ondragstart="dragStart(event)" draggable="true" id="dragtarget14">것이다</p>
+			</div>
+		</div>
+		
+	</div>
+
+		<div class="dragempty">
+			<div class="droptarget" style="left:0px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:110px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:220px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:330px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:440px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:550px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:660px;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:0px; top: 70px; " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:110px; top: 70px; " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:220px; top: 70px; " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:330px; top: 70px; " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:440px; top: 70px; " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:550px; top: 70px; " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+			<div class="droptarget" style="left:660px; top: 70px; " ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		</div>
+	</section>
+
+
+	<footer>
+		<div id="footerright">
+			<p>
+				-<br>
+				Daeun Shin<br>
+				danee_e@naver.com<br>
+				HKNU Design
+
+			</p>
+		</div>
+		<div id="footerleft">
+			<p>
+			-<br>
+			한국에서 여성의 인권은 여전히 낮으며, 사회에는 여성 차별이 만연합니다. 
+			다수의 문학작품에서 여성은 성적으로 대상화 되고 여성 캐릭터는 성적으로 소비되며 수단화 되고 있습니다. 이 페이지는 한국 사회에서 아직도 만연한 여성차별과 여성혐오에 대해 알리고 문제제기 하기 위해 제작되었습니다.</p>
+		</div>
+	</footer>
+
+	<script>
+
+		//--모니터--//
+		window.onscroll = function(){
+			var c = document.documentElement.scrollTop;
+			monitor.innerHTML = c + "px";
+		}
+
+		//--처음 텍스트--//
+		var a = 0;
+		var txt = '여기자들이 모두 그쪽처럼 생겼다면 이 여성 권리 운동을 더 심각하게 생각해 보고 싶은 마음도 드는군요 <span class="smallt">_&lsquo;Cloud Atlas&rsquo;, 2012.</span>';
+		var speed = 50;
+
+		
+
+		function typeWriter(){
+			// if (a < txt.length){
+			// 	document.getElementById("demo2").innerHTML += txt.charAt(a);
+			// 	a++;
+			// 	setTimeout(typeWriter,speed);
+			// }
+			demo2.innerHTML = txt;
+		}
+
+		//--여신상 --//
+		statueimg.onclick = function(){
+			statueimg.setAttribute("src","statuegif.gif");
+		}
+		//		<img src="statuegif.gif" id="statueimg">
+
+		//--슬라이더--//
+		var slider = document.getElementById("myRange");
+		var output = document.getElementById("demo");
+		output.innerHTML = slider.value;
+
+		slider.oninput = function() {
+			output.innerHTML = this.value;
+			monitor.src = "./im/im"+ this.value +".png";
+
+			console.log(this.value);
+		}
+
+		//--슬라이더 라인--//
+		// var c = document.getElementById("myCanvas");
+		// var ctx = c.getContext("2d");
+		// ctx.beginPath();
+		// ctx.moveTo(Math.floor((Math.random() * 1000)+1),0);
+		// ctx.lineTo(800,Math.floor((Math.random() * 1000)+1));
+		// ctx.strokeStyle="white";
+		// ctx.lineWidth = 0.3;
+		// ctx.stroke();
+
+		
+		
+
+		//--드래그앤드롭--//
+		function dragStart(event){
+			event.dataTransfer.setData("Text",event.target.id);
+			console.log(event.target.id);
+		}
+		function allowDrop(event) {
+			event.preventDefault();
+		}
+		function drop(event){
+			event.preventDefault();
+			var data = event.dataTransfer.getData("Text");
+			console.log(data);
+			event.target.appendChild(document.getElementById(data));
+		}
+
+		//--드래그앤드롭 셔플1--//
+		//클래스 이름과 아이템 간격을 인자로 실행한다.
+		shuffleArray("shuffle1",110);
+
+		function shuffleArray(cName,gap){
+			var t = document.getElementsByClassName(cName);
+			//클래스 숫자만큼 배열을 만들고 간격의 배수로 left값을 설정
+			var j = [];
+			for(var i=0; i<t.length; i++){
+				j.push(i*gap + "px");
+			}
+
+			//left값의 배열이 j에 저장되는데 이 배열을 섞는다.
+			shuffle(j);
+
+			//다시 클래스 아이템들에 새로운 left값을 지정한다.
+			for(i=0; i<t.length; i++){
+				t[i].style.left = j[i];
+			}
+
+			//shuffle함수
+			function shuffle(a) {
+				var j,x,i;
+				for(i=a.length - 1; i>0; i--){
+					j =  Math.floor(Math.random() * (i +1));
+					x = a[i]; a[i]=a[j]; a[j] = x;
+				}
+				return a;
+			}
+		}
+
+		//--드래그앤드롭 셔플2--//
+		//클래스 이름과 아이템 간격을 인자로 실행한다.
+		shuffleArray("shuffle2",110);
+
+		function shuffleArray(cName,gap){
+			var t = document.getElementsByClassName(cName);
+			//클래스 숫자만큼 배열을 만들고 간격의 배수로 left값을 설정
+			var j = [];
+			for(var i=0; i<t.length; i++){
+				j.push(i*gap + "px");
+			}
+
+			//left값의 배열이 j에 저장되는데 이 배열을 섞는다.
+			shuffle(j);
+
+			//다시 클래스 아이템들에 새로운 left값을 지정한다.
+			for(i=0; i<t.length; i++){
+				t[i].style.left = j[i];
+			}
+
+			//shuffle함수
+			function shuffle(a) {
+				var j,x,i;
+				for(i=a.length - 1; i>0; i--){
+					j =  Math.floor(Math.random() * (i +1));
+					x = a[i]; a[i]=a[j]; a[j] = x;
+				}
+				return a;
+			}
+		}
+
+
+
+
+
+
+		
+
+
+
+
+
+
+	</script>
+</body>
+</html>
